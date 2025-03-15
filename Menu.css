@@ -1,62 +1,72 @@
-body { 
-    font-family: Arial, sans-serif; 
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
-header { 
-    background: #333;
-    color: white;
-    padding: 15px;
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Heading Styles */
+.container h1 {
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Menu Section */
+.container .row {
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
+    justify-content: center;
+    gap: 20px;
 }
-.menu-btn { 
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+
+.container .col-md-4 {
+    flex: 1;
+    min-width: 300px;
 }
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+
+.container .p-3 {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
-nav ul li { 
-    margin: 0 15px; 
+
+.container .p-3:hover {
+    transform: scale(1.05);
 }
-nav ul li a {
-    color: white;
-    text-decoration: none;
+
+/* Chicken, Beef, Sushi Sections */
+#chicken {
+    background-color: #dc3545 !important;
 }
-.menu {
-    padding: 20px;
-    text-align: center;
+
+#beef {
+    background-color: #28a745 !important;
 }
-.food-item {
-    background: #ccc;
-    padding: 20px;
-    margin: 10px auto;
-    width: 80%;
-    max-width: 600px;
+
+#sushi {
+    background-color: #17a2b8 !important;
 }
- @media (max-width: 768px) {
-.menu-btn {
-    display: block;
-}
-nav ul {
-    display: none;
-    flex-direction: column;
-    background: #444;
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    text-align: center;
-}
-nav ul.show {
-    display: flex;
-}
-nav ul li {
-    margin: 10px 0; }
+
+/* Text Styling */
+.text-white {
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
